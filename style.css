@@ -1,0 +1,904 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    /* width: 100%; */
+    height: auto;
+    overflow-x: hidden;
+
+    /* padding: 0 8%; */
+}
+/* hero section styles */
+.hero{
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+    background: linear-gradient(to right, rgba(6, 6, 6, 0.8),rgba(16, 16, 16, 0.7)),url(img/hero-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+        
+}
+.hero nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    gap: 20px;
+    }
+.hero nav #logo{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}    
+.hero nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* margin-right: auto; */
+    width: 100%;
+
+
+}
+.hero nav ul li{
+   list-style: none;
+
+}
+.hero nav ul .btn{
+/* align-self: flex-end; */
+margin-left: auto;
+
+}
+.hero nav ul li a{
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.hero nav ul li button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+    background: rgb(214, 182, 123);
+}
+.hero nav button a{
+    font-weight: 600;
+}
+.hero nav .showMenu{
+    width: 30px;
+    height: 50px;
+    transform: rotate(-90deg);
+    display: none;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+#hideMenu{
+    display: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.hero .trapezoid1{
+    width: 80px;
+    height: 150px;
+    position: absolute;
+    right: -50px;
+    transform: rotate(-90deg);
+
+}
+.hero .trapezoid2{
+    width: 80px;
+    height: 150px;
+    position: absolute;
+    right: 100px;
+    bottom: -20px;
+    transform: translate(-80%,40%); 
+
+}
+.hero .hero-content{
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    left: 8%;
+    
+}
+.hero .hero-content h1{
+    color:  rgb(212, 177, 112);  
+    font-size: 2rem;  
+    margin-bottom: 30px;
+}
+.hero .hero-content p{
+   text-align: left;
+}
+.hero .hero-content button{
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+    background-color:  rgb(212, 177, 112);    
+    
+}
+/* About us section styles  */
+.about{
+    width: 80%;
+    margin: 80px 8%;
+    height: 80vh;
+    display: flex;            
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+}
+.about .contentArea{
+    width: 50%;
+    height: 100%;
+   
+
+}
+.about .contentArea p{
+    text-align: left;
+}
+.about .about-img{
+    height: 100%;
+    width: 50%;
+
+}
+.about .about-img .abt_img{
+    height: 100%;
+    width: 100%;
+    
+
+}
+.trapezoid3_About{
+    width: 80px;
+    height: 150px;
+    position: absolute;
+    right: -200px;
+    bottom: 20px;
+    transform: rotate(-90deg);
+}
+.about .contentArea{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding-left: 10%;
+    text-align: left;
+
+}
+.about .contentArea button{
+   padding: 10px 15px;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 2px;
+   background-color:  rgb(212, 177, 112);  
+   width: 150px;
+}
+
+/* services styles */
+
+.services{
+    width: 100%;
+    height: 50%;
+    padding: 50px;
+    padding: 10px;
+}
+.services h2{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.services h4{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.services .cards{
+
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    text-align: center;
+    font-size: 14px;
+}
+
+.services .cards .card1,.card3{
+    background-color: rgba(255, 215, 219, 0.653);
+    padding: 5px;
+
+}
+.services .cards .card2,.card4{
+    background-color: rgba(189, 189, 189, 0.263);
+    padding: 5px;
+}
+
+/* sectors section styles */
+.our_sectors{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 8%;
+    margin: 20px 0;
+}
+.our_sectors .trapezoid-sec{
+    display: none;
+}
+.our_sectors .sectors{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.our_sectors .sectors p a{
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+    background-color: rgba(251, 209, 213, 0.801);
+    padding: 5px;
+    margin-bottom: 40px;
+    font-size: 12px;
+}
+
+.our_sectors .sector_image{
+    width: 50%;
+    height: 100%;
+    
+}
+.our_sectors .sector_image img{
+    width: 100%;
+    height: 100%;
+    
+}
+.our_sectors .sectors h2{
+    align-self:self-start;
+    margin-bottom: 20px;
+
+}
+
+/* practice section style */
+.practice{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 8%;
+    margin: 20px 0;
+    position: relative;
+}
+
+.practice .img{
+    width: 50%;
+    height: 100%;
+
+}
+.practice .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.practice .practice_content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.practice .practice_content p a{
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+    background-color: rgba(251, 209, 213, 0.801);
+    padding: 5px;
+    margin-bottom: 40px;
+    font-size: 12px;
+}
+.practice .practice_content h2{
+    align-self:self-start;
+    margin-bottom: 20px;
+
+}
+.practice .trapezoid4{
+    width: 80px;
+    height: 150px;
+    position: absolute;
+    right: -50px;
+    bottom: 20px;
+    transform: rotate(-90deg);   
+
+}
+/* why A&N Partners section styles */
+.partners{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 8%;
+    margin: 20px 0;
+    font-size: 16px;
+}
+.partners .partners_content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;      
+
+}
+
+.partners .partners-img{
+    width: 50%;
+    height: 100%;
+    
+}
+.partners .partners-img img{
+    width: 100%;
+    height: 100%;
+    
+}
+.partners .partners_content h2{
+    align-self: self-start;
+    margin-bottom: 20px;
+
+}
+.partners .partners_content h3{
+    align-self: flex-start;
+    font-size: 15px;
+}
+.partners .partners_content p{
+    font-size: 1em;
+    margin-bottom: 10px;
+
+}
+/* call to action section starts */
+.cta{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0, 0.7)),url(img/cta_image.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    gap: 20px;
+}
+.cta p{
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    line-height: 25px;
+    color: white;
+}
+.cta .ctaTrapezoid{
+    width: 80px;
+    height: 150px;
+    position: absolute;
+    right: 10%;
+    bottom: -20px;
+    transform: translate(-50%,40%);    
+
+}
+.cta button{
+    padding: 10px 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+    background-color:  rgb(212, 177, 112);  
+    width: 150px;
+ }
+ /* contacts styles */
+ .contacts{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contacts h2,p{
+    text-align: center;
+  }
+
+
+  .contact_s {
+    margin-top: 20px;
+  }
+  .contacts .contact_s table tr,td{
+      height: 30px;
+   }
+   .contacts .contact_s table tr td a{
+      text-decoration: none;
+      font-weight: 200;
+      color: black;
+   }
+   .contacts_contents{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .map{
+    width: 100%;
+    padding-inline: 8%;
+    
+  }
+ .contacts_contents form{
+    float: right;
+    margin-top: -50px;
+    width: 48%;
+  }
+  .contacts_contents iframe{
+    width: 48%;
+    height: 300px;
+    
+  }
+  
+   .contacts_contents form .fname,.sname{
+      width: 48%; 
+      height: 30px;
+      border: 1px solid black;
+      padding: 5px;
+     
+   }
+   .contacts_contents form .sname{ 
+      float: right;
+     
+   }
+   .contacts_contents form .input3{
+      width: 100%; 
+      height: 30px;
+      border: 1px solid black;
+      padding: 5px;
+     
+   }
+ .contacts_contents form textarea{
+    width: 100%; 
+    height: 220px;
+    border: 1px solid black;
+    padding: 5px;
+   
+ }
+ .contacts_contents form button{
+    padding: 10px 15px;   
+ }
+
+
+/* footer styles */
+footer{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background-color: rgb(30, 29, 29);
+    }
+
+    footer ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-right: auto;
+    
+    }
+    footer ul li{
+       list-style: none;
+    
+    }
+    footer ul li a{
+        color: rgb(252, 251, 251);
+        text-transform: capitalize;
+        text-decoration: none;
+      
+    }
+    footer span a{
+        color: rgb(252, 251, 251);
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.2em;
+      
+    }
+    footer i{
+        color: rgb(252, 251, 251);
+        font-style: normal;
+      
+    }
+
+    /* ************************************On Mobile********************************** */
+    @media  only screen and (max-width:768px) {
+
+      /* navigation bar*/
+        .hero nav{
+            background: rgb(23, 23, 23);
+            z-index: 999;
+        }
+        .hero nav .showMenu{
+            display: block;
+            cursor: pointer;
+
+        }
+
+   
+        .hero nav .menus{
+            flex-direction: column;
+            background-color: rgb(23, 23, 23);
+            width: 100%;
+            height: 80vh;
+            position: absolute;
+            top: 70px;
+            right: -100%;
+            z-index: 1;
+            justify-content: start;    
+            padding-top: 10%; 
+            visibility: hidden;
+            transition: .5s ease;   
+        }
+        .hero nav ul .btn{
+            margin-left: 0;
+            
+            }       
+
+
+       /* hero body */
+        .hero .trapezoid1{
+            display: none;        
+        }
+        .hero .trapezoid2{
+            width: 80px;
+            height: 150px;
+            position: absolute;
+            right: 50%;
+            bottom: 0%;
+            transform: translate(50%,50%);            
+        }
+  
+        .hero .hero-content{
+           position: relative;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           text-align: center;  
+           left: 0%;      
+            
+        }
+        .hero .hero-content p{
+           text-align: center;
+        }
+        /* about section*/
+
+        .about{
+        
+            width: 100%;
+            margin: 80px 0;
+            height: 100vh;/* */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .about .contentArea{
+            max-width: 90%;
+            width: 100%;
+            height: 65vh;
+            box-shadow: 0 0 5px rgb(111, 111, 111, 0.6);
+            background: white;
+            position: absolute;
+            right: 50%;
+            transform: translate(50%,50%);  
+            padding: 0 20px;    
+            text-align: center;     
+            
+            
+        
+        }
+        .about .contentArea button{
+           align-self: center;
+           background: black;
+           color: aliceblue;
+           font-weight: 700;
+
+        }
+        .about .about-img{
+            height: 100%;
+            width: 100%;
+        
+        }
+        .about .about-img .abt_img{
+           width: 100%;
+           height: 400px;          
+        }
+        
+
+        .trapezoid3_About{
+            display: none;          
+        }
+        /* our sectors */
+
+        .our_sectors{
+         padding-inline: 0;
+         flex-direction: column-reverse;
+         height: auto;
+         position: relative;
+         padding-bottom: 0;
+    
+            
+        }
+        .our_sectors .sector_image{
+         width: 100%;
+         height: 400px;
+         
+        }
+        .our_sectors .sector_image img{
+         width: 100%;
+         max-height: 400px;
+         
+        }
+        .our_sectors .trapezoid-sec{
+            display: block;
+            width: 80px;
+            height: 150px;
+            position: absolute;
+            right: 50%;
+            top: 0%;
+            transform: translate(50%,-40%);            
+        }
+        .our_sectors .sectors{
+         max-width: 90%;
+         width: 100%;
+         height: auto;
+         background-color: white;
+         box-shadow: 0 2px 5px rgb(151, 150, 150);
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         transform: translate(0%, -30%);
+         padding: 50px 10px;      
+       
+        }
+        
+        .our_sectors .sectors p{
+        font-size: 1.2rem;
+        }
+        .our_sectors .sectors p a{
+            
+            margin: 0;
+            margin-top: 10px;
+            display: block;
+            font-size: 1.2rem;
+            background: rgb(211, 211, 211,.2);
+        }
+        .our_sectors .sectors p br{           
+            display: none;            
+        }
+
+       /* practice styles */
+
+       .practice{
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+        
+        margin-top: -100px;
+        position: relative;
+  
+    }
+    
+    .practice .img{
+        width: 100%;
+        height: 400px;
+    
+    }
+    .practice .img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .practice .practice_content{
+        max-width: 90%;
+        width: 100%;
+        height: auto;
+        transform: translate(0%, -30%);
+        padding: 50px 10px;   
+        gap: 20px;
+        background: white;
+        box-shadow: 0 0 5px rgba(152, 152, 152, 0.8);
+    
+    }
+
+    .practice .practice_content p{
+        font-size: 1.2rem;
+        }
+    .practice .practice_content p a{
+            
+        margin: 0;
+        margin-top: 10px;
+        display: block;
+        font-size: 1.2rem;
+        background: rgb(211, 211, 211,.2);
+        }
+    .practice .practice_content p br{           
+        display: none;            
+        }
+
+        .practice .trapezoid4{
+            display: block;
+            width: 80px;
+            height: 150px;
+            position: absolute;
+            right: 50%;
+            top: 0%;
+            transform: translate(50%,-40%);            
+        }
+
+
+        /* partners section styles */
+        .partners{
+            padding-inline: 0;
+            flex-direction: column-reverse;
+            height: auto;
+            position: relative;
+            padding-bottom: 0;
+            margin-top: -150px;
+       
+               
+           }
+           .partners .partners-img{
+            width: 100%;
+            height: 400px;
+            
+           }
+           .partners .partners-img img{
+            width: 100%;
+            max-height: 400px;
+            
+           }
+           .partners .partners_content{
+            max-width: 90%;
+            width: 100%;
+            height: auto;
+            background-color: white;
+            box-shadow: 0 2px 5px rgb(151, 150, 150);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: translate(0%, -30%);
+            padding: 50px 20px;      
+            
+           }
+           .partners .partners_content h3{
+            margin-top: 20px;
+           }
+           
+           .partners .partners_content p{
+           font-size: 1.2rem;
+           }
+           .partners .partners_content p br{           
+               display: none;            
+           }
+
+           /* CTA styles */
+           .cta{
+            top: -80px
+           }
+           .cta .ctaTrapezoid{
+            width: 80px;
+            height: 150px;
+            position: absolute;
+            right: 50%;
+            top: 0;
+            transform: translate(50%,-50%);    
+        
+        }
+
+           /* contacts */
+
+
+       .contacts{
+        height: auto;
+       
+     }
+     .contact_s table{
+        width: 100%;
+        text-align: center;
+     }
+     .contact_s table tr>* {
+        display: block;
+        
+      }
+     .contacts_contents{
+        flex-direction: column;
+     }
+     .contacts_contents .map{
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        width: 100%;
+     }
+    
+     .contacts_contents form{
+        text-align: center;
+        float: none;
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+        
+     }
+     .contacts_contents form .fname,.sname{
+        width: 100%;         
+     }
+     .contacts_contents form .sname{ 
+        float:none;
+        margin-top: 20px;
+       
+     }
+     .contacts_contents form .input3{
+        width: 100%;       
+     }
+     .contacts_contents form textarea{
+        width: 100%; 
+       
+     }
+     .contacts_contents form button{
+        padding: 10px 15px;
+
+     }
+
+     .contacts_contents iframe{
+        width: 100%;
+        inset: 0;
+        height: 300px;
+        margin-top: 20px;
+        
+      }
+
+/* **** */
+
+  
+
+      /* footer section */
+      footer{
+       height: auto;
+       flex-direction: column;
+       gap: 20px;
+       justify-content: center;
+       padding: 20px 0 20px;
+      }
+      footer ul{
+       margin: auto;
+      }  
+    }
+
+    
